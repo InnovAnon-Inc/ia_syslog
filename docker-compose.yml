@@ -5,6 +5,10 @@ services:
       context:        .
       tags:
         - innovanon/ia_syslog:latest
+        -           ia_syslog:latest
+        - innovanon/ia_syslog
+        -           ia_syslog
+    image:            innovanon/ia_syslog
     restart:          no
     logging:
       driver:         syslog   
